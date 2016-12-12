@@ -1,0 +1,39 @@
+body {
+  background-color: #181818;
+}
+
+.clockface {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  border: 10px solid #454545;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+}
+
+.hand {
+  position: absolute;
+  width: 48%;
+  height: 2px;
+  background-color: #555555;
+  top: 50%;
+  left: 2%;
+  transform-origin: 100%; /*make rotating from right end*/
+  transform: rotate(90deg); /*rotate to set 12 oclock*/
+  transition: all 0.05s;
+  transition-timing-function: cubic-bezier(.1, 2.7, .58, 1);
+}
+
+.min-hand {
+  width: 42%;
+  height: 4px;
+  left: 8%;
+}
+
+.hour-hand {
+  width: 37%;
+  height: 6px;
+  left: 13%;
+}
